@@ -22,7 +22,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
+    <!-- client js -->
+    <script src="discount.js"></script>
     <!-- client css -->
     <link rel="stylesheet" href="bootswatch-darkly.css" />
   </head>
@@ -134,6 +135,81 @@
         <a class="btn btn-outline-primary btn-lg" href="#" role="button"
           ><i class="bi bi-bag-dash-fill"></i> Order Here</a
         >
+      </div>
+      <div class="row p-2 m-2" id="discount-row">
+        <div class="col px-2 py-4">
+          <h3>Tis the seasoning</h3>
+          <div class="mb-4">
+            Order today! Save 12.5% on Chef Anton's Italian Seasoning. You don't
+            want to make Chef Anton mad, do you?
+          </div>
+          <i>Discount expires: 2/25/2025</i><br />
+          <i class="bi bi-receipt"></i>
+          <a
+            href="#"
+            class="discount"
+            data-product="Chef Anton's Italian Seasoning"
+            data-code="CHEF123"
+            data-title="Chef Anton's Discount"
+            >Discount Code</a
+          >
+        </div>
+        <div class="col px-2 py-4">
+          <h3>Going Green!</h3>
+          <div class="mb-4">
+            Order today! Save 15% on some pre-made salad mixes. Select one of 3
+            salad mixes, and save with this code!
+          </div>
+          <i>Discount expires: 2/25/2025</i><br />
+          <i class="bi bi-receipt"></i>
+          <a
+            href="#"
+            class="discount"
+            data-product="Pre-made salad mixes"
+            data-code="SALAD456"
+            data-title="Salad Mix Discount"
+            >Discount Code</a
+          >
+        </div>
+        <div class="col px-2 py-4">
+          <h3>Going Green!</h3>
+          <div class="mb-4">
+            Order today! Save 10% on premium steaks! We all lobe steak, so why
+            not grab some while it's on sale?
+          </div>
+          <i>Discount expires: 2/25/2025</i><br />
+          <i class="bi bi-receipt"></i>
+          <a
+            href="#"
+            class="discount"
+            data-product="Premium steaks"
+            data-code="STEAK789"
+            data-title="Steak Discount"
+            >Discount Code</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto" id="product">Product</strong>
+          <small class="text-body-secondary">discount title</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Discount Code: 1234</div>
       </div>
     </div>
   </body>
